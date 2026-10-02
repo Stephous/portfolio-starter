@@ -7,7 +7,8 @@ import { CompétencesComponent } from './pages/competences/competences.component
 import { ContactComponent } from './pages/contact/contact.component';
 
 export const routes: Routes = [
-  { path: '', component: AccueilComponent },
+  { path: '', redirectTo: '/accueil', pathMatch: 'full' },
+  { path: '**', redirectTo: '/accueil' },
   { path: 'accueil', component: AccueilComponent },
   { path: 'projets', component: ProjetsComponent },
   { path: 'experiences', component: ExpériencesComponent },
