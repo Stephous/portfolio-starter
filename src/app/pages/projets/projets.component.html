@@ -1,0 +1,79 @@
+<div class="projects-page">
+  <div class="page-header">
+    <h2>Mes Projets Académiques</h2>
+    <p>Découvrez quelques-uns de mes projets réalisés pendant mon parcours étudiant.</p>
+  </div>
+
+  <div class="projects-grid">
+    <!-- Projet DDCN -->
+    <div class="project-card" [class.new]="_isNew: true">
+      <div class="project-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+      </div>
+      <h3>DDCN - Orientation Sites UPJV</h3>
+      <p class="description">
+        Application Angular pour aider à se retrouver dans les sites universitaires d'Amiens et découvrir les bâtiments.
+        Géolocalisation, plans interactifs et parcours thématiques.
+      </p>
+      <div class="tech-stack">
+        <span>Angular 13</span>
+        <span>TypeScript</span>
+        <span>Mapbox GL JS</span>
+        <span>Bootstrap 4</span>
+      </div>
+      <a href="https://gitlab.com/Stephous/ddcn_conduite_de_projet" target="_blank" rel="noopener noreferrer" class="project-link">
+        Voir le code sur GitLab →
+      </a>
+    </div>
+
+    <!-- Projet Escape Game -->
+    <div class="project-card">
+      <div class="project-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+        </svg>
+      </div>
+      <h3>Escape Game 2D</h3>
+      <p class="description">
+        Participation à un Escape Game 2D collectif sous Unity/C#, principalement sur les sprites et la logique d'une salle.
+        Travail en équipe avec création de tous les assets graphiques.
+      </p>
+      <div class="tech-stack">
+        <span>Unity</span>
+        <span>C#</span>
+        <span>2D Game Dev</span>
+      </div>
+      <a href="https://gitlab.com/escape-game-LAHSMYJJJ/escape-game-lahsmyjjj" target="_blank" rel="noopener noreferrer" class="project-link">
+        Voir le projet sur GitLab →
+      </a>
+    </div>
+
+    <!-- Projet MAP IHM -->
+    <div class="project-card">
+      <div class="project-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M1 6C1 8.959 3.041 11.414 6 13"/>
+          <path d="M23 6c-2.959 0-5 2.459-5 5.586"/>
+          <path d="M7 13l5 5 7-7"/>
+          <path d="M22 22l-6-6"/>
+        </svg>
+      </div>
+      <h3>MAP IHM - Itinéraires Piétons</h3>
+      <p class="description">
+        Prototype pour sélectionner un trajet à pied autour d'Amiens, obtenir ses instructions et visualiser des altitudes.
+        Cartographie interactive avec routage et données 3D.
+      </p>
+      <div class="tech-stack">
+        <span>Leaflet</span>
+        <span>GraphHopper</span>
+        <span>Jawg</span>
+        <span>Nominatim</span>
+      </div>
+      <a href="https://gitlab.com/Stephous/map_ihm_miage1" target="_blank" rel="noopener noreferrer" class="project-link">
+        Voir le projet sur GitLab →
+      </a>
+    </div>
+  </div>

@@ -1,0 +1,99 @@
+.formations-page {
+  padding: 4rem 2rem;
+  background: #f8fafc;
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 2.5rem;
+      color: #1e293b;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #64748b;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .formations-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .formation-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateX(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .formation-badge {
+      min-width: 100px;
+      padding: 0.75rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-align: center;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.1rem;
+
+      span {
+        display: block;
+        font-size: 0.85rem;
+        opacity: 0.9;
+      }
+    }
+
+    .formation-content {
+      flex: 1;
+
+      h3 {
+        font-size: 1.3rem;
+        color: #1e293b;
+        margin: 0 0 0.5rem 0;
+      }
+
+      .institution {
+        color: #667eea;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+      }
+
+      .description {
+        color: #64748b;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+      }
+
+      .skills-acquired {
+        background: #f1f5f9;
+        padding: 0.75rem;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        color: #475569;
+      }
+    }
+  }
+}

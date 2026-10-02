@@ -1,0 +1,36 @@
+.footer {
+  background: #1e293b;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+
+  p {
+    opacity: 0.8;
+    margin-bottom: 1rem;
+  }
+
+  .links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .disclaimer {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}

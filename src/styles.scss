@@ -1,0 +1,164 @@
+/* Styles globaux du portfolio */
+
+// Reset et variables CSS
+:root {
+  --primary: #667eea;
+  --secondary: #764ba2;
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --background: #f8fafc;
+  --white: #ffffff;
+  --border-radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--background);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+// Utilitaires
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Navigation mobile
+.main-nav-mobile {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.75rem 1rem;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  z-index: 100;
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &.active {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+// Footer
+.footer {
+  background: #1e293b;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+
+  p {
+    opacity: 0.8;
+    margin-bottom: 1rem;
+  }
+
+  .links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .disclaimer {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav-mobile {
+    display: flex; // Navigation mobile active sur petit écran
+  }
+}
+
+// Footer styles
+.footer {
+  background: #1e293b;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+
+  p {
+    opacity: 0.8;
+    margin-bottom: 1rem;
+  }
+
+  .links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .disclaimer {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}

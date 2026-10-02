@@ -1,0 +1,132 @@
+.experiences-page {
+  padding: 4rem 2rem;
+  background: #f8fafc;
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 2.5rem;
+      color: #1e293b;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #64748b;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 42px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, #667eea, #764ba2);
+    }
+
+    &.reverse &::before {
+      background: linear-gradient(-180deg, #667eea, #764ba2);
+    }
+  }
+
+  .timeline-item {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+
+    &:hover {
+      .timeline-icon svg {
+        transform: scale(1.1);
+      }
+    }
+
+    &.reverse {
+      flex-direction: row-reverse;
+
+      .timeline-content {
+        margin-right: 50px;
+        text-align: right;
+      }
+    }
+  }
+
+  .timeline-icon {
+    position: absolute;
+    left: 28px;
+    top: 15px;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 28px;
+      height: 28px;
+      color: white;
+      transition: all 0.3s ease;
+      transform: scale(1);
+    }
+  }
+
+  .timeline-content {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    flex: 1;
+
+    h3 {
+      font-size: 1.3rem;
+      color: #1e293b;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .periode {
+      color: #667eea;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+    }
+
+    .description {
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      .tech-tag {
+        background: #e2e8f0;
+        padding: 0.4rem 0.8rem;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        color: #64748b;
+        font-weight: 500;
+
+        &.new {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+        }
+      }
+    }
+  }
+}
