@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterOutlet } from '@angular/router';
 
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule],
-  template: `<router-outlet></router-outlet>`
+@NgModule({
+  declarations: [],
+  imports: [BrowserModule, RouterOutlet],
+  bootstrap: [AppComponent]
 })
 export class AppComponent {
   title = 'Portfolio de Stéphane Dacheux';

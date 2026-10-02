@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { NgModule, RouterOutlet } from '@angular/core';
 
-@Component({
-  selector: 'app-contact',
-  template: `<router-outlet></router-outlet>`
+@NgModule({
+  declarations: [],
+  imports: [RouterOutlet],
 })
 export class ContactComponent {}

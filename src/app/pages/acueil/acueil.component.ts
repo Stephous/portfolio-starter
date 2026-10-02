@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
-@Component({
-  selector: 'app-acueil',
-  template: `<router-outlet></router-outlet>`
+@NgModule({
+  declarations: [],
 })
 export class AccueilComponent {}

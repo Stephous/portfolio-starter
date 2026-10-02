@@ -5,13 +5,12 @@
   "main": "server.js",
   "scripts": {
     "ng": "ng",
-    "start": "npm run concurrently",
-    "concurrently": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "ts-node src/server.ts",
-    "client": "ng serve",
+    "start": "ng serve --proxy-config proxy.conf.json",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node dist/portfolio/server.js || true",
+    "client": "ng serve --host 0.0.0.0 --proxy-config proxy.conf.json",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "watch": "ng build --watch --configuration development"
   },
   "keywords": ["portfolio", "angular", "express", "fullstack"],
   "author": "Stephane Dacheux",
@@ -33,7 +32,6 @@
     "@angular-devkit/build-angular": "^19.2.0",
     "@angular/cli": "^19.2.0",
     "@angular/compiler-cli": "^19.2.0",
-    "ts-node": "^10.9.2",
     "typescript": "~5.7.2"
   }
 }
