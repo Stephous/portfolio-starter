@@ -1,6 +1,15 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { AppComponent } from './app/app.component';
+import { Component } from '@angular/core';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { provideRouter } from '@angular/router';
 
-platformBrowserDynamic().bootstrapModule(AppComponent, {
-  ngZoneEventCoalescing: true
-}).catch(err => console.error(err));
+@Component({
+  selector: 'app-root',
+  template: `<router-outlet></router-outlet>`
+})
+export class AppComponent {}
+
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideRouter([])
+  ]
+}).catch((err) => console.error(err));
