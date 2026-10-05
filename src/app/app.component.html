@@ -1,4 +1,27 @@
 <main>
-  <router-outlet></router-outlet>
+  <!-- Navigation mobile (affiche sous forme de menu vertical) -->
+  <nav class="nav-links" app-root>
+    <a [routerLink]="'/'" routerLinkActive="active">Accueil</a>
+    <a [routerLink]="'projets'" routerLinkActive="active">Projets</a>
+    <a [routerLink]="'experiences'" routerLinkActive="active">Expériences</a>
+    <a [routerLink]="'formations'" routerLinkActive="active">Formations</a>
+    <a [routerLink]="'competences'" routerLinkActive="active">Compétences</a>
+    <a [routerLink]="'contact'" routerLinkActive="active">Contact</a>
+  </nav>
+
+  <!-- Contenu principal -->
+  <div app-page-root>
+    <router-outlet></router-outlet>
+
+    <!-- Footer avec liens réseaux sociaux -->
+    <footer>
+      <div class="social-links">
+        <a href="https://github.com/Stephous" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/stephane-dacheux-851957176" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="@SteelBeamY">@SteelBeamY</a>
+        <a href="@Stephous">@Stephous</a>
+        <a href="@Soulsteave">@Soulsteave</a>
+      </div>
+    </footer>
+  </div>
 </main>
-<app-footer></app-footer>

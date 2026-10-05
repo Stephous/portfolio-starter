@@ -1,85 +1,66 @@
-<div class="formations-page">
-  <div class="page-header">
-    <h2>Mes Formations</h2>
-    <p>Découvrez mon parcours académique et les certifications acquises.</p>
-  </div>
+<div class="page-header">
+  <h2>Mes Formations</h2>
+  <p>Découvrez mon parcours académique et les certifications acquises.</p>
+</div>
 
-  <div class="formations-timeline">
-    <!-- DUT Informatique -->
-    <div class="formation-item" [class.new]="_isNew: false">
-      <div class="formation-badge">2017-2019</div>
-      <div class="formation-content">
-        <h3>DUT Informatique</h3>
-        <p class="institution">IUT d'Amiens</p>
-        <p class="description">Formation de base en développement, programmation et gestion de projets informatiques.</p>
-        <div class="skills-acquired">
-          <strong>Acquis :</strong> Programmation, bases de données, algorithmique, gestion de projet
-        </div>
-      </div>
-    </div>
-
-    <!-- Licence Pro CDAW -->
-    <div class="formation-item" [class.new]="_isNew: false">
-      <div class="formation-badge">2019-2020</div>
-      <div class="formation-content">
-        <h3>Licence Professionnelle Conception et Développement d'Applications Web et Mobile</h3>
-        <p class="institution">INSSET Saint-Quentin / UPJV</p>
-        <p class="description">Spécialisation en développement web full stack, frameworks modernes et applications mobiles.</p>
-        <div class="skills-acquired">
-          <strong>Acquis :</strong> Angular, Node.js, bases de données NoSQL, API REST
-        </div>
-      </div>
-    </div>
-
-    <!-- Licence Pro Réseaux -->
-    <div class="formation-item" [class.new]="_isNew: false">
-      <div class="formation-badge">2020-2021</div>
-      <div class="formation-content">
-        <h3>Licence Professionnelle Métiers des Réseaux Informatiques et Télécommunications</h3>
-        <p class="institution">IUT d'Amiens</p>
-        <p class="description">Expertise en réseaux, sécurité, virtualisation et infrastructure IT.</p>
-        <div class="skills-acquired">
-          <strong>Acquis :</strong> Sécurité réseau, virtualisation, administration système
-        </div>
-      </div>
-    </div>
-
-    <!-- Master 1 MIAGE -->
-    <div class="formation-item" [class.new]="_isNew: false">
-      <div class="formation-badge">2021-2022</div>
-      <div class="formation-content">
-        <h3>Master 1 MIAGE</h3>
-        <p class="institution">UPJV - UFR des sciences d'Amiens</p>
-        <p class="description">Méthodes Informatiques Appliquées à la Gestion des Entreprises. Développement d'applications métiers.</p>
-        <div class="skills-acquired">
-          <strong>Acquis :</strong> Analyse des besoins, conception architecturale, méthodologies agiles
-        </div>
-      </div>
-    </div>
-
-    <!-- Master 2 MIAGE -->
-    <div class="formation-item" [class.new]="_isNew: false">
-      <div class="formation-badge">2022-2023</div>
-      <div class="formation-content">
-        <h3>Master 2 MIAGE</h3>
-        <p class="institution">UPJV - UFR des sciences d'Amiens</p>
-        <p class="description">Parcours expert en architecture logicielle et ingénierie du logiciel.</p>
-        <div class="skills-acquired">
-          <strong>Acquis :</strong> Architecture microservices, design patterns, testing avancé
-        </div>
-      </div>
-    </div>
-
-    <!-- BAFA -->
-    <div class="formation-item" [class.new]="_isNew: false">
-      <div class="formation-badge">2018-2019</div>
-      <div class="formation-content">
-        <h3>BAFA - Brevet d'Avoir en Formation d'Animateur</h3>
-        <p class="institution">UFCV (Union des Fédérations de la Culture Virtuelle)</p>
-        <p class="description">Certification pour l'encadrement d'enfants et la gestion de groupe.</p>
-        <div class="skills-acquired">
-          <strong>Acquis :</strong> Gestion de groupe, pédagogie, sécurité infantile
-        </div>
-      </div>
+<div class="timeline">
+  <!-- DUT Informatique -->
+  <div class="timeline-item" style="background: white; border-radius: 16px; padding: 1.5rem;">
+    <div class="period-badge" style="min-width: 100px; padding: 0.75rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; border-radius: 12px; font-weight: 700;">2017-2019</div>
+    <div style="margin-top: 1rem;">
+      <h3>DUT Informatique</h3>
+      <p class="institution" style="color: var(--primary-color); font-weight: 600;">IUT d'Amiens</p>
+      <p class="description" style="color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem;">Formation de base en développement, programmation et gestion de projets informatiques.</p>
     </div>
   </div>
+
+  <!-- Licence Pro CDAW -->
+  <div class="timeline-item" style="background: white; border-radius: 16px; padding: 1.5rem;">
+    <div class="period-badge" style="min-width: 100px; padding: 0.75rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; text-align: center; border-radius: 12px; font-weight: 700;">2019-2020</div>
+    <div style="margin-top: 1rem;">
+      <h3>Licence Pro CDAW</h3>
+      <p class="institution" style="color: var(--primary-color); font-weight: 600;">INSSET Saint-Quentin / UPJV</p>
+      <p class="description" style="color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem;">Spécialisation en développement web full stack, frameworks modernes et applications mobiles.</p>
+    </div>
+  </div>
+
+  <!-- Licence Pro Réseaux -->
+  <div class="timeline-item" style="background: white; border-radius: 16px; padding: 1.5rem;">
+    <div class="period-badge" style="min-width: 100px; padding: 0.75rem; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; text-align: center; border-radius: 12px; font-weight: 700;">2020-2021</div>
+    <div style="margin-top: 1rem;">
+      <h3>Licence Pro Métiers des Réseaux</h3>
+      <p class="institution" style="color: var(--primary-color); font-weight: 600;">IUT d'Amiens</p>
+      <p class="description" style="color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem;">Expertise en réseaux, sécurité, virtualisation et infrastructure IT.</p>
+    </div>
+  </div>
+
+  <!-- Master 1 MIAGE -->
+  <div class="timeline-item" style="background: white; border-radius: 16px; padding: 1.5rem;">
+    <div class="period-badge" style="min-width: 100px; padding: 0.75rem; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: var(--text-primary); text-align: center; border-radius: 12px; font-weight: 700;">2021-2022</div>
+    <div style="margin-top: 1rem;">
+      <h3>Master 1 MIAGE</h3>
+      <p class="institution" style="color: var(--primary-color); font-weight: 600;">UPJV - UFR des sciences d'Amiens</p>
+      <p class="description" style="color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem;">Méthodes Informatiques Appliquées à la Gestion des Entreprises.</p>
+    </div>
+  </div>
+
+  <!-- Master 2 MIAGE -->
+  <div class="timeline-item" style="background: white; border-radius: 16px; padding: 1.5rem;">
+    <div class="period-badge" style="min-width: 100px; padding: 0.75rem; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; text-align: center; border-radius: 12px; font-weight: 700;">2022-2023</div>
+    <div style="margin-top: 1rem;">
+      <h3>Master 2 MIAGE</h3>
+      <p class="institution" style="color: var(--primary-color); font-weight: 600;">UPJV - UFR des sciences d'Amiens</p>
+      <p class="description" style="color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem;">Parcours expert en architecture logicielle et ingénierie du logiciel.</p>
+    </div>
+  </div>
+
+  <!-- BAFA -->
+  <div class="timeline-item" style="background: white; border-radius: 16px; padding: 1.5rem;">
+    <div class="period-badge" style="min-width: 100px; padding: 0.75rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; text-align: center; border-radius: 12px; font-weight: 700;">2018-2019</div>
+    <div style="margin-top: 1rem;">
+      <h3>BAFA - Formation d'Animateur</h3>
+      <p class="institution" style="color: var(--primary-color); font-weight: 600;">UFCV</p>
+      <p class="description" style="color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem;">Certification pour l'encadrement d'enfants et la gestion de groupe.</p>
+    </div>
+  </div>
+</div>

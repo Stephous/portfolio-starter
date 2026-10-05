@@ -1,0 +1,2 @@
+- [angular-check](angular-check.md) — Audit complet du projet Angular et corrections
+- [route-redirect-fix](route-redirect-fix.md) — Correction de la redirection infinie dans app.routes.ts

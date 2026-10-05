@@ -1,38 +1,55 @@
-<div class="hero">
-  <div class="profile-photo">
-    <span class="initials">SD</span>
-  </div>
-  <div class="hero-content">
-    <h1>Stephane Dacheux</h1>
-    <p class="tagline">Développeur web full stack</p>
-    <p class="bio">Je conçois et fais évoluer des applications métiers adaptées aux usages de leurs utilisateurs.</p>
+<div app-page-root>
+  <h1>Bienvenue sur mon portfolio 👋</h1>
 
-    <div class="quick-links">
-      <a routerLink="/projets" class="btn btn-primary">Voir mes projets</a>
-      <a routerLink="/experiences" class="btn btn-secondary">Mes expériences</a>
-      <a routerLink="/contact" class="btn btn-outline">Me contacter</a>
+  <div class="main-content">
+    <div class="profile-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 1rem; margin-bottom: 1.5rem;">
+      <h2 style="margin-bottom: 1rem;">Stéphane Dacheux</h2>
+      <p style="font-size: 1.1rem; opacity: 0.95; line-height: 1.8;">Développeur web full stack spécialisé dans les applications métiers et l'analyse des besoins.</p>
+
+      <div style="margin-top: 1.5rem;">
+        <h3 style="margin-bottom: 0.75rem;">Mes expertises</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+          <span style="background: rgba(255,255,255,0.2); padding: 0.375rem 0.75rem; border-radius: 9999px; font-size: 0.875rem; display: inline-flex; align-items: center;">
+            <svg style="width: 14px; height: 14px; fill: white; margin-right: 0.5rem;" viewBox="0 0 24 24"><path d="M18.36 5.64a9 9 0 1 0 1.13 11.12l4.22-2.1c.34-.17.47-.6.3-.94L21.84 8.95l-2.1 2.1a9 9 0 0 0-1.38-5.41zM9 12a3 3 0 1 1-3-3 3 3 0 0 1 3 3zm6.74-2.74a3 3 0 1 1-3-3 3 3 0 0 1 3 3z"/></svg>
+            <span>Développement Full Stack</span>
+          </span>
+          <span style="background: rgba(255,255,255,0.2); padding: 0.375rem 0.75rem; border-radius: 9999px; font-size: 0.875rem; display: inline-flex; align-items: center;">
+            <svg style="width: 14px; height: 14px; fill: white; margin-right: 0.5rem;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-1c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1V7h2c1.1 0 2-.9 2-2v-.43C13.95 4.07 17.31 1 21.26 1.5c1.93.25 3.44 1.98 3.44 3.91 0 2.66-1.86 4.88-4.37 5.11-.32.02-.55.16-.57.48l-.13 1.71c.32.44.63.9.91 1.39z"/></svg>
+            <span>Architecture d'entreprise</span>
+          </span>
+          <span style="background: rgba(255,255,255,0.2); padding: 0.375rem 0.75rem; border-radius: 9999px; font-size: 0.875rem; display: inline-flex; align-items; center;">
+            <svg style="width: 14px; height: 14px; fill: white; margin-right: 0.5rem;" viewBox="0 0 24 24"><path d="M16 7c-1.83.46-3 2.19-3 4s1.17 3.54 3 4c1.83-.46 3-2.19 3-4s-1.17-3.54-3-4zm-8 4c0-1.81-1.17-3.54-3-4-1.83.46-3 2.19-3 4s1.17 3.54 3 4c1.83-.46 3-2.19 3-4zm7.25-7C15.44 2.28 12.53 1 9 1S2.56 2.28 1.75 4h21.49c-.81-1.72-3.72-3-7.25-3zm0 14c-2.19 0-3.96-1.77-3.96-4 0-1.51.75-2.83 1.88-3.51l-1.03-1.76C10.5 8.91 9.5 9.9 9.5 11c0 1.66 1.34 3 3 3s3-1.34 3-3c0-1.1-.99-2.09-2.26-2.51l1.03-1.76C17.25 8.17 18 9.49 18 11c0 2.21-1.77 4-3.75 4z"/></svg>
+            <span>Formation & Pédagogie</span>
+          </span>
+        </div>
+      </div>
+
+      <div style="margin-top: 1.5rem;">
+        <a href="#projets" class="btn">Voir mes projets</a>
+        <a href="#experiences" class="btn" style="background: rgba(255,255,255,0.2); margin-left: 0.5rem;">Mes expériences</a>
+      </div>
     </div>
 
+    <div class="actions-section" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+      <a href="#projets" class="btn" style="justify-content: flex-start; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">📁 Mes projets</a>
+      <a href="#experiences" class="btn" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">💼 Mes expériences</a>
+      <a href="#formations" class="btn" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">🎓 Mes formations</a>
+      <a href="#contact" class="btn" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">📧 Me contacter</a>
+    </div>
+
+    <div class="social-section" style="text-align: center;">
+      <h3 style="margin-bottom: 1rem; color: var(--text-primary);">Suivez-moi sur les réseaux</h3>
+      <div style="display: flex; justify-content: center; gap: 1rem;">
+        <a href="https://github.com/Stephous" target="_blank" rel="noopener noreferrer" class="social-link" style="padding: 0.75rem 1.25rem; background: var(--bg-primary); color: var(--text-primary); border-radius: 9999px; text-decoration: none; border: 1px solid var(--border-color); font-weight: 500;">GitHub</a>
+        <a href="https://linkedin.com/in/stephane-dacheux-851957176" target="_blank" rel="noopener noreferrer" class="social-link" style="padding: 0.75rem 1.25rem; background: var(--bg-primary); color: var(--text-primary); border-radius: 9999px; text-decoration: none; border: 1px solid var(--border-color); font-weight: 500;">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <footer style="background: var(--bg-primary); padding: 1rem; text-align: center; font-size: 0.875rem; color: var(--text-secondary); border-top: 1px solid var(--border-color); margin-top: auto;">
     <div class="social-links">
-      <a href="https://github.com/Stephous" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/in/stephane-dacheux-851957176" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/Stephous" target="_blank" rel="noopener noreferrer">@Stephous</a>
+      <a href="https://linkedin.com/in/stephane-dacheux-851957176" target="_blank" rel="noopener noreferrer">@Soulsteave</a>
     </div>
-  </div>
-
-  <!-- Navigation -->
-  <nav class="main-nav">
-    <a routerLink="/" routerLinkActive="active">Accueil</a>
-    <a routerLink="/projets" routerLinkActive="active">Projets</a>
-    <a routerLink="/experiences" routerLinkActive="active">Expériences</a>
-    <a routerLink="/formations" routerLinkActive="active">Formations</a>
-    <a routerLink="/competences" routerLinkActive="active">Compétences</a>
-    <a routerLink="/contact" routerLinkActive="active">Contact</a>
-  </nav>
-
-  <!-- Pseudo badges -->
-  <div class="pseudos">
-    <span>@SteelBeamY</span>
-    <span>@Stephous</span>
-    <span>@Soulsteave</span>
-  </div>
+  </footer>
 </div>
