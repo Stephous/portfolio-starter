@@ -10,17 +10,41 @@ Portfolio personnel développé avec **Angular** (frontend) et **Express** (back
 npm install
 ```
 
+### ⚠️ Correction importante appliquée
+
+Le problème `File 'src\app\main.ts' is missing` a été corrigé dans le fichier `tsconfig.app.json`. Le chemin du fichier principal a été mis à jour vers `src/app/main.ts`.
+
+**Si vous avez des erreurs de compilation :**
+1. Vérifiez que `npm install` a bien exécuté (les dépendances Angular sont critiques)
+2. Lancez `npm start` depuis la racine du projet
+
 ### Lancement en mode développement
 
-Le projet démarre deux services simultanément :
-- **Port 4200** : Angular (frontend, serveur de développement)
-- **Port 3001** : Express API (backend avec données JSON)
+Le projet démarre un service Angular qui :
+- Compile le frontend sur **Port 4200**
+- Utilise le proxy configuré vers l'API backend sur **Port 3001**
 
 ```bash
 npm start
-# ou
-npm run concurrently
+# ou explicitement
+ng serve --proxy-config proxy.conf.json
 ```
+
+### Lancement séparé (backend uniquement)
+
+Si vous souhaitez tester l'API sans Angular :
+```bash
+cd backend
+npx ts-node server.ts
+```
+
+### Build pour production
+
+```bash
+npm run build
+```
+
+Le dossier `dist/portfolio/` contient l'application compilée prête pour le déploiement.
 
 ### Build pour production
 
