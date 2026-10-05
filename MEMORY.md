@@ -1,2 +1,3 @@
-- [angular-check](angular-check.md) — Audit complet du projet Angular et corrections
-- [route-redirect-fix](route-redirect-fix.md) — Correction de la redirection infinie dans app.routes.ts
+- [angular-check](memory/angular-check.md) — Audit complet du projet Angular et corrections
+- [final-check](memory/final-check.md) — Vérification finale - compilation réussie ✅
+
