@@ -51,8 +51,26 @@
     .social-links a { padding: 0.5rem; background: var(--bg-primary); border-radius: 9999px; border: 1px solid var(--border-color); font-size: 0.875rem; color: var(--text-secondary); text-decoration: none; transition: all 0.2s; }
     .social-links a:hover { border-color: var(--primary-color); color: var(--primary-color); transform: translateY(-1px); }
 
-    /* Footer */
-    footer { background: var(--bg-primary); padding: 0.75rem 1rem; text-align: center; font-size: 0.875rem; color: var(--text-secondary); border-top: 1px solid var(--border-color); margin-top: auto; }
+    /* Footer poussé en bas */
+    footer { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 1.5rem; text-align: center; font-size: 0.9rem; color: #64748b; border-top: 1px solid var(--border-color); }
+
+    /* Boutons avec hover effect gardant le texte visible */
+    .projects-btn {
+      display: inline-flex; align-items: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 0.75rem 1.5rem; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;
+    }
+
+    .projects-btn,
+    .experiences-btn,
+    .formations-btn {
+      &:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3); }
+    }
+
+    .contact-btn {
+      background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+      color: white; padding: 0.75rem 1.5rem; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;
+
+      &:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(67, 233, 123, 0.3); }
+    }
 
     /* Timeline */
     .timeline { position: relative; padding-left: 2rem; }
