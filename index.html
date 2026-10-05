@@ -80,6 +80,7 @@
 
     /* Bouton retour à l'accueil sur les pages */
     .back-home-btn {
+      display: none; /* Caché par défaut */
       position: fixed;
       top: 1rem;
       right: 1rem;
@@ -111,6 +112,18 @@
       }
     }
 
+    /* Afficher le bouton retour uniquement sur mobile */
+    @media (max-width: 768px) {
+      .back-home-btn {
+        display: flex !important;
+      }
+
+      /* Cacher le bouton quand le sidebar est ouvert */
+      .back-home-btn-hidden {
+        display: none !important;
+      }
+    }
+
     /* Sidebar responsive */
     @media (max-width: 768px) {
       .sidebar {
@@ -133,13 +146,9 @@
       /* Cacher les éléments optionnels quand le sidebar est fermé */
       .sidebar.hidden-mobile {
         .hidden-mobile,
-        .back-home-btn {
+        [class*="hidden-mobile"] {
           display: none !important;
         }
-      }
-
-      .back-home-btn {
-        display: block;
       }
     }
 

@@ -9,4 +9,6 @@ import { SidebarComponent } from '../../shared/index';
   templateUrl: './competences.component.html',
   styleUrls: ['./competences.component.scss']
 })
-export class CompétencesComponent {}
+export class CompétencesComponent {
+  // Le bouton retour est géré par CSS selon l'état du sidebar
+}

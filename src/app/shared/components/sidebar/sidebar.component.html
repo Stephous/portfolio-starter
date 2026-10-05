@@ -1,4 +1,4 @@
-<nav class="sidebar" [class.hidden]="!isVisible">
+<nav class="sidebar" [class.hidden]="!isVisible" [class.back-home-btn-hidden]="!isVisible">
   <!-- Bouton hamburger (visible uniquement sur mobile) -->
   <div class="mobile-toggle" *ngIf="isMobile && !isVisible">
     <button class="hamburger-btn" (click)="toggleSidebar()">

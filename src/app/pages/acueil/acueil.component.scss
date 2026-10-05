@@ -12,6 +12,7 @@ a {
 
 /* Bouton retour à l'accueil sur les autres pages */
 .back-home-btn {
+  display: none; /* Caché par défaut, affiché via CSS media query */
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -40,6 +41,18 @@ a {
 
   svg {
     flex-shrink: 0;
+  }
+}
+
+/* Afficher le bouton retour uniquement sur mobile */
+@media (max-width: 768px) {
+  .back-home-btn {
+    display: flex;
+  }
+
+  /* Cacher le bouton quand le sidebar est ouvert */
+  .back-home-btn-hidden {
+    display: none !important;
   }
 }
 
