@@ -9,13 +9,4 @@ import { SidebarComponent } from '../../shared/index';
   templateUrl: './formations.component.html',
   styleUrls: ['./formations.component.scss']
 })
-export class FormationsComponent {
-  isMobile = window.innerWidth <= 768;
-
-  constructor() {
-    this.isMobile = window.innerWidth <= 768;
-    window.addEventListener('resize', () => {
-      this.isMobile = window.innerWidth <= 768;
-    });
-  }
-}
+export class FormationsComponent {}

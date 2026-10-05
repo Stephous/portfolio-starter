@@ -1,12 +1,12 @@
 <nav class="sidebar" [class.hidden]="!isVisible">
   <!-- Bouton hamburger (visible uniquement sur mobile) -->
-  <div class="mobile-toggle" *ngIf="isMobile">
+  <div class="mobile-toggle" *ngIf="isMobile && !isVisible">
     <button class="hamburger-btn" (click)="toggleSidebar()">
       <span></span>
       <span></span>
       <span></span>
     </button>
-    <label class="sidebar-checkbox" [class.checked]="isVisible">
+    <label class="sidebar-checkbox" [class.checked]="isVisible" (click)="toggleSidebar()">
       Menu
     </label>
   </div>
@@ -32,7 +32,7 @@
       </li>
 
       <!-- Projets -->
-      <li [class.hidden-mobile]="isMobile && !isVisible">
+      <li [class.hidden-mobile]="!isVisible">
         <a [routerLink]="'/projets'" routerLinkActive="active-link">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
@@ -42,7 +42,7 @@
       </li>
 
       <!-- Expériences -->
-      <li [class.hidden-mobile]="isMobile && !isVisible">
+      <li [class.hidden-mobile]="!isVisible">
         <a [routerLink]="'/experiences'" routerLinkActive="active-link">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
@@ -53,7 +53,7 @@
       </li>
 
       <!-- Formations -->
-      <li [class.hidden-mobile]="isMobile && !isVisible">
+      <li [class.hidden-mobile]="!isVisible">
         <a [routerLink]="'/formations'" routerLinkActive="active-link">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
@@ -64,7 +64,7 @@
       </li>
 
       <!-- Compétences -->
-      <li [class.hidden-mobile]="isMobile && !isVisible">
+      <li [class.hidden-mobile]="!isVisible">
         <a [routerLink]="'/competences'" routerLinkActive="active-link">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.7-3.7a1 1 0 0 0 0-1.4l-1.6-1.6a1 1 0 0 0-1.4 0zm-5.2 0a1 1 0 0 0 0 1.4L7.9 9.3a1 1 0 0 0 0 1.4l-3.7 3.7a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.7-3.7a1 1 0 0 0 0-1.4L9.5 7.7z"/>
@@ -74,7 +74,7 @@
       </li>
 
       <!-- Contact -->
-      <li [class.hidden-mobile]="isMobile && !isVisible">
+      <li [class.hidden-mobile]="!isVisible">
         <a [routerLink]="'/contact'" routerLinkActive="active-link">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>

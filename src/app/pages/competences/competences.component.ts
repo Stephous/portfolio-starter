@@ -9,13 +9,4 @@ import { SidebarComponent } from '../../shared/index';
   templateUrl: './competences.component.html',
   styleUrls: ['./competences.component.scss']
 })
-export class CompétencesComponent {
-  isMobile = window.innerWidth <= 768;
-
-  constructor() {
-    this.isMobile = window.innerWidth <= 768;
-    window.addEventListener('resize', () => {
-      this.isMobile = window.innerWidth <= 768;
-    });
-  }
-}
+export class CompétencesComponent {}

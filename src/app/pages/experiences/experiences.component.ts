@@ -9,13 +9,4 @@ import { SidebarComponent } from '../../shared/index';
   templateUrl: './experiences.component.html',
   styleUrls: ['./experiences.component.scss']
 })
-export class ExpériencesComponent {
-  isMobile = window.innerWidth <= 768;
-
-  constructor() {
-    this.isMobile = window.innerWidth <= 768;
-    window.addEventListener('resize', () => {
-      this.isMobile = window.innerWidth <= 768;
-    });
-  }
-}
+export class ExpériencesComponent {}

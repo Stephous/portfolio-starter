@@ -9,13 +9,4 @@ import { SidebarComponent } from '../../shared/index';
   templateUrl: './projets.component.html',
   styleUrls: ['./projets.component.scss']
 })
-export class ProjetsComponent {
-  isMobile = window.innerWidth <= 768;
-
-  constructor() {
-    this.isMobile = window.innerWidth <= 768;
-    window.addEventListener('resize', () => {
-      this.isMobile = window.innerWidth <= 768;
-    });
-  }
-}
+export class ProjetsComponent {}

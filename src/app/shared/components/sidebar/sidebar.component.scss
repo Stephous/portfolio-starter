@@ -76,8 +76,9 @@
   }
 }
 
-.sidebar.hidden-mobile {
-  display: none;
+/* Classe pour cacher tous les liens quand le sidebar est fermé */
+.hidden-mobile {
+  display: none !important;
 }
 
 .sidebar-content {
@@ -224,18 +225,9 @@
   }
 }
 
-@media (min-width: 769px) {
-  .sidebar.hidden-mobile {
-    display: block;
-  }
-
-  /* Le sidebar est toujours visible sur desktop */
-  .sidebar {
-    left: 0;
-    box-shadow: none;
-  }
-
-  .back-home-btn {
+/* Sidebar fermé : cache tous les éléments optionnels */
+.sidebar.hidden {
+  .hidden-mobile {
     display: none !important;
   }
 }

@@ -111,6 +111,38 @@
       }
     }
 
+    /* Sidebar responsive */
+    @media (max-width: 768px) {
+      .sidebar {
+        left: -280px;
+
+        &.visible {
+          left: 0;
+        }
+
+        .mobile-toggle {
+          display: flex;
+        }
+
+        .hamburger-btn span {
+          width: 18px;
+          height: 2px;
+        }
+      }
+
+      /* Cacher les éléments optionnels quand le sidebar est fermé */
+      .sidebar.hidden-mobile {
+        .hidden-mobile,
+        .back-home-btn {
+          display: none !important;
+        }
+      }
+
+      .back-home-btn {
+        display: block;
+      }
+    }
+
     /* Grid pour compétences */
     .skills-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
     .skill-category { background: var(--bg-primary); padding: 1.25rem; border-radius: 0.75rem; border: 1px solid var(--border-color); box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
