@@ -4,9 +4,9 @@
   <p>Découvrez quelques-uns de mes projets réalisés pendant mon parcours étudiant.</p>
 </section>
 
-<div class="projects-grid">
+<div class="projects-container">
   <!-- Projet DDCN -->
-  <div class="project-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+  <div class="project-card" [style.background]="'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'" [style.color]="'white'">
     <div class="project-icon">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
@@ -15,7 +15,7 @@
     </div>
     <h3>DDCN - Orientation Sites UPJV</h3>
     <p class="description">Application Angular pour aider à se retrouver dans les sites universitaires d'Amiens.</p>
-    <div class="tech-stack" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem;">
+    <div class="tech-stack" [style.display]="'flex'" [style.gap]="'0.5rem'" [style.flexWrap]="'wrap'" [style.marginTop]="'0.75rem'">
       <span style="padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.2); border-radius: 6px; font-size: 0.8rem;">Angular 13</span>
       <span style="padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.2); border-radius: 6px; font-size: 0.8rem;">TypeScript</span>
       <span style="padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.2); border-radius: 6px; font-size: 0.8rem;">Mapbox GL JS</span>
@@ -24,7 +24,7 @@
   </div>
 
   <!-- Projet Escape Game -->
-  <div class="project-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+  <div class="project-card" [style.background]="'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'" [style.color]="'white'">
     <div class="project-icon">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
@@ -32,7 +32,7 @@
     </div>
     <h3>Escape Game 2D</h3>
     <p class="description">Participation à un Escape Game 2D collectif sous Unity/C#.</p>
-    <div class="tech-stack" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem;">
+    <div class="tech-stack" [style.display]="'flex'" [style.gap]="'0.5rem'" [style.flexWrap]="'wrap'" [style.marginTop]="'0.75rem'">
       <span style="padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.2); border-radius: 6px; font-size: 0.8rem;">Unity</span>
       <span style="padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.2); border-radius: 6px; font-size: 0.8rem;">C#</span>
       <span style="padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.2); border-radius: 6px; font-size: 0.8rem;">2D Game Dev</span>
@@ -41,7 +41,7 @@
   </div>
 
   <!-- Projet MAP IHM -->
-  <div class="project-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white;">
+  <div class="project-card" [style.background]="'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'" [style.color]="'white'">
     <div class="project-icon">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M1 6C1 8.959 3.041 11.414 6 13"/>
@@ -50,7 +50,7 @@
     </div>
     <h3>MAP IHM - Itinéraires Piétons</h3>
     <p class="description">Prototype d'itinéraires piétons autour d'Amiens avec altitudes.</p>
-    <div class="tech-stack" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem;">
+    <div class="tech-stack" [style.display]="'flex'" [style.gap]="'0.5rem'" [style.flexWrap]="'wrap'" [style.marginTop]="'0.75rem'">
       <span style="padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.2); border-radius: 6px; font-size: 0.8rem;">Leaflet</span>
       <span style="padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.2); border-radius: 6px; font-size: 0.8rem;">GraphHopper</span>
       <span style="padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.2); border-radius: 6px; font-size: 0.8rem;">Jawg</span>

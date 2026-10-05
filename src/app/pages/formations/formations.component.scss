@@ -3,35 +3,67 @@
 .page-header {
   max-width: 1200px;
   margin: 0 auto 2rem;
+  padding: 0 1.5rem;
+}
+
+.timeline-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  padding: 0 1.5rem 2rem;
 }
 
 .timeline-item {
   background: var(--bg-primary);
   border-radius: 16px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   }
 }
 
 .period-badge {
-  min-width: 120px;
+  min-width: 100px;
   padding: 0.75rem;
   border-radius: 12px;
   font-weight: 700;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px 12px 0 0;
+    z-index: -1;
+  }
 }
 
 /* Timeline styles already in index.html */
 
 @media (max-width: 768px) {
+  .timeline-container {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 0 1rem 1.5rem;
+  }
+
   .period-badge {
     min-width: auto;
     width: fit-content;
+
+    &::before {
+      display: none;
+    }
   }
 }

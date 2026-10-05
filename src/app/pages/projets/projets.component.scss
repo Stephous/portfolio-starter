@@ -3,30 +3,64 @@
 .page-header {
   max-width: 1200px;
   margin: 0 auto 2rem;
+  padding: 0 1.5rem;
 }
 
-.projects-grid {
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.75rem;
   width: 100%;
+  padding: 0 1.5rem 2rem;
 }
 
 .project-card {
   background: var(--bg-primary);
   border-radius: 16px;
-  padding: 1.5rem;
+  padding: 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   cursor: pointer;
 
   &:hover {
-    transform: translateY(-8px) scale(1.02);
+    transform: translateY(-8px) scale(1.01);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: white;
+    font-weight: 700;
+  }
+
+  .description {
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .tech-stack {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: 1rem;
+  }
+}
+
+.project-card.gradient-background {
+  h3,
+  .description {
+    color: inherit;
   }
 }
 
 .project-icon {
   width: 60px;
   height: 60px;
-  background: var(--bg-secondary);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -41,7 +75,7 @@
 
 .project-link {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   padding: 0.5rem 0;
   font-weight: 600;
   text-decoration: none;
@@ -71,11 +105,17 @@
 }
 
 @media (max-width: 768px) {
-  .projects-grid {
+  .projects-container {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem 1.5rem;
   }
 
   .project-card {
-    padding: 1.25rem;
+    padding: 1.75rem;
+
+    &:hover {
+      transform: translateY(-4px) scale(1);
+    }
   }
 }

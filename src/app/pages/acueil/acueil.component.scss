@@ -1,3 +1,9 @@
+/* Empêche les liens de changer de couleur par défaut */
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
+
 /* Styles spécifiques au composant Accueil - Design amélioré */
 
 .profile-section, .actions-section, .social-section {
@@ -51,7 +57,32 @@ html {
   }
 }
 
-/* Styles boutons */
+/* Tags de compétences */
+.expertise-tag {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  span {
+    font-weight: 500;
+  }
+}
+
+/* Styles boutons - effets visuels sans changement de couleur */
 .btn {
   padding: 0.75rem 1.5rem;
   border-radius: 12px;
@@ -61,11 +92,31 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
+}
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+/* Effets de survol spécifiques pour chaque bouton */
+.competences-btn-custom:hover,
+.projects-btn-custom:hover,
+.experiences-btn-custom:hover,
+.formations-btn-custom:hover,
+.contact-btn-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation fluide de l'ombre au survol */
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.btn:hover::before {
+  opacity: 1;
 }
 
 /* Styles sections */
