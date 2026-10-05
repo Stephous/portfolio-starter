@@ -1,0 +1,241 @@
+/* Styles du composant Sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100vh;
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem 1.5rem;
+  z-index: 1000;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+
+  &.visible {
+    left: 0;
+  }
+
+  .mobile-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .hamburger-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      padding: 0.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      span {
+        width: 20px;
+        height: 2px;
+        background: white;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    .sidebar-checkbox {
+      display: none;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    &.show-toggle {
+      .hamburger-btn span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      .hamburger-btn span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .hamburger-btn span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+
+      label {
+        display: block;
+      }
+    }
+  }
+}
+
+.sidebar.hidden-mobile {
+  display: none;
+}
+
+.sidebar-content {
+  padding-top: 2.5rem;
+  height: calc(100vh - 6rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  margin-bottom: 2rem;
+
+  h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.25rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin: 0;
+  }
+}
+
+/* Liens de navigation */
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  flex: 1;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateX(4px);
+
+      .nav-text {
+        font-weight: 600;
+      }
+    }
+
+    &.active-link {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+      .nav-text {
+        font-weight: 700;
+      }
+    }
+
+    svg {
+      flex-shrink: 0;
+    }
+
+    .nav-text {
+      transition: all 0.2s ease;
+    }
+  }
+}
+
+/* Footer du sidebar */
+.sidebar-footer {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  .copyright {
+    font-size: 0.7rem;
+    opacity: 0.6;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* Styles du bouton retour à l'accueil */
+.back-home-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: none; /* Caché par défaut, visible uniquement quand nécessaire */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  transition: all 0.3s ease;
+
+  svg {
+    margin-right: 0.5rem;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+
+    .back-text {
+      font-weight: 700;
+    }
+  }
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    left: -280px;
+
+    &.visible {
+      left: 0;
+    }
+
+    .mobile-toggle {
+      display: flex;
+    }
+
+    .hamburger-btn span {
+      width: 18px;
+      height: 2px;
+    }
+  }
+
+  .back-home-btn {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .sidebar.hidden-mobile {
+    display: block;
+  }
+
+  /* Le sidebar est toujours visible sur desktop */
+  .sidebar {
+    left: 0;
+    box-shadow: none;
+  }
+
+  .back-home-btn {
+    display: none !important;
+  }
+}

@@ -78,6 +78,39 @@
     .timeline-item::before { content: ''; position: absolute; left: -0.85rem; top: 0.4rem; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--primary-color); border: 3px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
     .timeline-item:nth-child(even)::before { background: var(--text-secondary); }
 
+    /* Bouton retour à l'accueil sur les pages */
+    .back-home-btn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 999;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.25rem;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+
+        .back-text {
+          font-weight: 700;
+        }
+      }
+
+      svg {
+        flex-shrink: 0;
+      }
+    }
+
     /* Grid pour compétences */
     .skills-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
     .skill-category { background: var(--bg-primary); padding: 1.25rem; border-radius: 0.75rem; border: 1px solid var(--border-color); box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
@@ -104,6 +137,61 @@
       .nav-links, .page-nav { flex-direction: column; align-items: stretch; gap: 0.5rem; text-align: center; }
       .projects-grid { grid-template-columns: 1fr; }
       .skills-grid { grid-template-columns: 1fr; }
+
+      /* Sidebar mobile */
+      .sidebar-toggle-btn {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1000;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        padding: 0.75rem 1rem;
+        border-radius: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+        }
+
+        svg {
+          flex-shrink: 0;
+        }
+
+        .toggle-text {
+          transition: all 0.2s ease;
+        }
+      }
+
+      /* Hamburger menu */
+      .hamburger-btn span {
+        width: 18px;
+        height: 2px;
+        background: white;
+        transition: all 0.3s ease;
+      }
+
+      .sidebar-toggle-open {
+        .hamburger-btn span:nth-child(1) {
+          transform: rotate(45deg) translate(4px, 5px);
+        }
+
+        .hamburger-btn span:nth-child(2) {
+          opacity: 0;
+        }
+
+        .hamburger-btn span:nth-child(3) {
+          transform: rotate(-45deg) translate(4px, -6px);
+        }
+      }
     }
   </style>
 </head>
