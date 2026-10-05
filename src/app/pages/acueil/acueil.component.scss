@@ -1,50 +1,145 @@
-/* Styles spécifiques au composant Accueil */
-
-.app-page-root {
-  width: 100%;
-  padding: 1rem;
-}
-
-.main-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
+/* Styles spécifiques au composant Accueil - Design amélioré */
 
 .profile-section, .actions-section, .social-section {
   width: 100%;
 }
 
-.social-link {
-  padding: 0.75rem 1.25rem;
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  border-radius: 9999px;
+/* Scroll smooth pour les ancrages */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Pour compenser la navigation */
+}
+
+/* Styles des liens vers sections - Smooth scroll activation */
+.btn[href^="#"], .social-link {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+/* Styles spécifiques GitHub */
+.github {
+  color: #333;
+
+  &:hover {
+    background: rgba(49, 220, 69, 0.1);
+    border-color: #333;
+  }
+}
+
+/* Styles spécifiques LinkedIn */
+.linkedin {
+  color: #0077b5;
+
+  &:hover {
+    background: rgba(0, 119, 181, 0.1);
+    border-color: #0077b5;
+  }
+}
+
+/* Styles boutons */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
   text-decoration: none;
-  border: 1px solid var(--border-color);
-  font-weight: 500;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
+}
+
+/* Styles sections */
+.profile-section {
+  padding: 3rem 2rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+  }
+}
+
+.actions-section {
+  padding: 2rem 0;
+}
+
+.social-section h3 {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .main-content {
-    padding: 0.5rem;
+  .profile-section {
+    padding: 2rem 1rem;
+
+    h2 {
+      font-size: 1.8rem;
+    }
   }
 
-  .social-links {
-    flex-direction: column;
-    align-items: center;
+  .social-section {
+    padding: 1.5rem 1rem;
   }
 
-  .social-link {
+  .btn {
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* Animation des sections */
+section {
+  animation: fadeInUp 0.6s ease-out;
+
+  &.profile-section {
+    animation-delay: 0.1s;
+  }
+
+  &.actions-section {
+    animation-delay: 0.2s;
+  }
+
+  &.social-section {
+    animation-delay: 0.3s;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
