@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SidebarComponent } from '../../shared/index';
+import { SidebarComponent, HeaderComponent } from '../../shared/index';
 
 @Component({
   selector: 'app-competences',
   standalone: true,
-  imports: [CommonModule, SidebarComponent],
+  imports: [CommonModule, SidebarComponent, HeaderComponent],
   templateUrl: './competences.component.html',
   styleUrls: ['./competences.component.scss']
 })
-export class CompétencesComponent {
-  // Le bouton retour est géré par CSS selon l'état du sidebar
-}
+export class CompétencesComponent {}

@@ -5,7 +5,7 @@
 </section>
 
 <!-- Bouton retour à l'accueil (toujours visible sur mobile) -->
-<button class="back-home-btn back-home-btn-hidden" routerLink="/accueil">
+<button class="back-home-btn back-home-btn-hidden" routerLink="/">
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
     <path d="M19 12H5m14 0l-4-4m4 4l-4 4"/>
   </svg>
@@ -21,7 +21,22 @@
     <!-- Colonne des informations -->
     <div class="contact-info-col">
       <!-- Liens Professionnels -->
+      <!-- Email -->
       <div class="info-card" [style.background]="'white'" [style.padding]="'1.75rem'" [style.borderRadius]="'16px'" [style.boxShadow]="'0 4px 12px rgba(0, 0, 0, 0.08)'">
+        <h3 class="info-title">Email</h3>
+
+        <a href="mailto:stephanedacheux.pro@gmail.com" class="contact-link email" [style.display]="'flex'" [style.alignItems]="'center'" [style.gap]="'0.75rem'" [style.padding]="'1rem 1.25rem'" [style.background]="'linear-gradient(135deg, #66ea87 0%, #4ba272 100%)'" [style.color]="'white'" [style.textDecoration]="'none'" [style.borderRadius]="'12px'" [style.marginBottom]="'0.75rem'">
+          <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 14.93c1.346-.486 2.745-.73 4.177-.73 1.432 0 2.831.244 4.177.73l-2.13 12.767h-4.114l-2.113-12.767zm.06-12.93h4.016l1.98 11.5h-4.016l-1.98-11.5zm8.235 0v11.5h4.016l1.98-11.5h-4.015v-11.5z"/></svg>
+          <span class="link-text">stephanedacheux.pro&#64;gmail.com</span>
+        </a>
+
+        <div class="info-footer">
+          <p style="margin: 0; font-size: 0.9rem;">Adresse personnelle pour correspondances professionnelles.</p>
+        </div>
+      </div>
+
+      <!-- Liens professionnels -->
+      <div class="info-card" [style.background]="'white'" [style.padding]="'1.75rem'" [style.borderRadius]="'16px'" [style.boxShadow]="'0 4px 12px rgba(0, 0, 0, 0.08)'" [style.marginTop]="'1rem'">
         <h3 class="info-title">Liens Professionnels</h3>
 
         <a href="https://www.linkedin.com/in/stephane-dacheux-851957176" target="_blank" rel="noopener noreferrer" class="contact-link linkedin" [style.display]="'flex'" [style.alignItems]="'center'" [style.gap]="'0.75rem'" [style.padding]="'1rem 1.25rem'" [style.background]="'linear-gradient(135deg, #0077b5 0%, #00b4d8 100%)'" [style.color]="'white'" [style.textDecoration]="'none'" [style.borderRadius]="'12px'" [style.marginBottom]="'0.75rem'">
@@ -35,28 +50,18 @@
         </a>
 
         <div class="info-footer">
-          <strong>Email :</strong> (à activer si souhaité)
-        </div>
-      </div>
-
-      <!-- Pseudos -->
-      <div class="info-card" [style.background]="'white'" [style.padding]="'1.75rem'" [style.borderRadius]="'16px'" [style.boxShadow]="'0 4px 12px rgba(0, 0, 0, 0.08)'" [style.marginTop]="'1rem'">
-        <h3 class="info-title">Pseudos Alternatifs</h3>
-        <div class="pseudo-container">
-          <span class="pseudo-tag" [style.padding]="'0.5rem 0.75rem'" [style.background]="'var(--bg-secondary)'" [style.borderRadius]="'9999px'" [style.fontSize]="'0.9rem'">Stephous</span>
-          <span class="pseudo-tag" [style.padding]="'0.5rem 0.75rem'" [style.background]="'var(--bg-secondary)'" [style.borderRadius]="'9999px'" [style.fontSize]="'0.9rem'">Soulsteave</span>
-          <span class="pseudo-tag" [style.padding]="'0.5rem 0.75rem'" [style.background]="'var(--bg-secondary)'" [style.borderRadius]="'9999px'" [style.fontSize]="'0.9rem'">SteelBeamY</span>
+          <p style="margin: 0; font-size: 0.9rem;">Contactez-moi via LinkedIn ou GitHub pour des opportunités professionnelles.</p>
         </div>
       </div>
 
       <!-- Démarches -->
       <div class="info-card" [style.background]="'white'" [style.padding]="'1.75rem'" [style.borderRadius]="'16px'" [style.boxShadow]="'0 4px 12px rgba(0, 0, 0, 0.08)'" [style.marginTop]="'1rem'">
-        <h3 class="info-title">Démarches Possibles</h3>
-        <p class="demarche-description">Vous pouvez :</p>
-        <ul class="demarche-list">
-          <li>M'envoyer un message via LinkedIn ou GitHub</li>
-          <li>Me contacter directement par email si activé</li>
-          <li>Voir mes projets détaillés sur les pages dédiées</li>
+        <h3 class="info-title">Comment me contacter</h3>
+        <p style="margin-bottom: 1rem;">Vous pouvez :</p>
+        <ul class="demarche-list" style="margin: 0; padding-left: 1.25rem;">
+          <li style="margin-bottom: 0.5rem;">Envoyer un email à l'adresse ci-dessus</li>
+          <li style="margin-bottom: 0.5rem;">Me contacter via LinkedIn ou GitHub</li>
+          <li>Voir mes projets détaillés sur les pages dédiées du site</li>
         </ul>
       </div>
     </div>
