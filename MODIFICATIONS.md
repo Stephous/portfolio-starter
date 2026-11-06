@@ -36,7 +36,7 @@ Nouveau composant réutilisable avec :
 ### 2. Fichiers modifiés pour ajouter le Header
 
 #### Composants TypeScript mis à jour :
-- `src/app/pages/acueil/acueil.component.html` - Retiré l'en-tête dupliqué, ajouté `<app-header>`
+- `src/app/pages/accueil/accueil.component.html` - Retiré l'en-tête dupliqué, ajouté `<app-header>`
 - `src/app/pages/projets/projets.component.ts` + `.html`
 - `src/app/pages/experiences/experiences.component.ts` + `.html`
 - `src/app/pages/formations/formations.component.ts` + `.html`
@@ -100,7 +100,7 @@ npm run build
 2. `src/app/shared/components/header/header.component.html`
 
 ### Modifiés (12) :
-1. `src/app/pages/acueil/acueil.component.html`
+1. `src/app/pages/accueil/accueil.component.html`
 2. `src/app/pages/contact/contact.component.ts`
 3. `src/app/pages/contact/contact.component.html`
 4. `src/app/pages/projets/projets.component.ts`

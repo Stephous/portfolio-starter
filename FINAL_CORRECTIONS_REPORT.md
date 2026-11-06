@@ -24,7 +24,7 @@
 
 ### Correction #1 : Boutons de navigation rétablis
 
-**Fichier modifié :** `src/app/pages/acueil/acueil.component.html`
+**Fichier modifié :** `src/app/pages/accueil/accueil.component.html`
 
 **Avant (template minimal) :**
 ```html
@@ -105,7 +105,7 @@
 
 ### Correction #3 : Imports mis à jour pour le RouterLink
 
-**Fichier modifié :** `src/app/pages/acueil/acueil.component.ts`
+**Fichier modifié :** `src/app/pages/accueil/accueil.component.ts`
 
 **Changement :** Réajout de `RouterLink` dans les imports TypeScript car nécessaire pour le template
 
@@ -114,8 +114,8 @@ import { RouterLink } from '@angular/router'; // ✅ Re-ajouté
 
 @Component({
   imports: [CommonModule, RouterLink, FooterComponent, HeaderComponent], // ✅ RouterList présent
-  templateUrl: './acueil.component.html',
-  styleUrls: ['./acueil.component.scss']
+  templateUrl: './accueil.component.html',
+  styleUrls: ['./accueil.component.scss']
 })
 ```
 
@@ -178,7 +178,7 @@ npm run build
 | # | Date | Fichier | Action | Status |
 |---|------|---------|--------|--------|
 | 1 | 06/11/2026 | `src/app/shared/index.ts` | Export FooterComponent | ✅ |
-| 2 | 06/11/2026 | `src/app/pages/acueil/acueil.component.{ts,html}` | Migration footer + restauration boutons | ✅ |
+| 2 | 06/11/2026 | `src/app/pages/accueil/accueil.component.{ts,html}` | Migration footer + restauration boutons | ✅ |
 | 3 | 06/11/2026 | `src/app/pages/contact/contact.component.*` | Ajout FooterComponent | ✅ |
 | 4 | 06/11/2026 | `src/app/shared/components/footer/*.html` | Nettoyage liens GitLab | ✅ |
 

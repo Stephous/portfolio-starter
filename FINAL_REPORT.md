@@ -88,8 +88,8 @@
 ### Modifiés (13 fichiers) :
 | Fichier | Modification principale |
 |---------|-------------------------|
-| `src/app/pages/acueil/acueil.component.html` | Retiré l'en-tête dupliqué, ajouté `<app-header>` |
-| `src/app/pages/acueil/acueil.component.ts` | Ajout de l'import `HeaderComponent` et `RouterLink` |
+| `src/app/pages/accueil/accueil.component.html` | Retiré l'en-tête dupliqué, ajouté `<app-header>` |
+| `src/app/pages/accueil/accueil.component.ts` | Ajout de l'import `HeaderComponent` et `RouterLink` |
 | `src/app/pages/contact/contact.component.html` | Remplacement contenu (email + liens) |
 | `src/app/pages/contact/contact.component.ts` | Ajout RouterLink pour le bouton retour |
 | `src/app/pages/projets/projets.component.html` | Ajout `<app-header>` après sidebar |

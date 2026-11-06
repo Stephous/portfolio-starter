@@ -26,7 +26,7 @@
 ---
 
 ### 2. Warnings RouterOutlet dans les composants ⚠️
-**Fichiers :** Tous les composants de page (`acueil`, `competences`, `contact`, `formations`)
+**Fichiers :** Tous les composants de page (`accueil`, `competences`, `contact`, `formations`)
 
 **Problème :** Imports inutiles de `RouterOutlet` dans les templates n'utilisant pas ce composant directement.
 
@@ -37,7 +37,7 @@
 ### 3. Styles manquants - Application sans CSS ❌
 **Fichiers :** 
 - `index.html` (mis à jour)
-- Tous les composants de page (`acueil`, `competences`, `contact`, `formations`, `projets`, `experiences`)
+- Tous les composants de page (`accueil`, `competences`, `contact`, `formations`, `projets`, `experiences`)
 
 **Problème :** Contenu affiché en bloc sans style, pas de navigation cliquable.
 
@@ -72,9 +72,9 @@
 |-----------|---------|
 | `app.component.ts` | Ajout de `RouterLink`, `RouterLinkActive`, `templateUrl` |
 | `app.component.html` | Navigation et footer |
-| `acueil.component.ts` | Migration vers templateUrl |
-| `acueil.component.html` | Template HTML complet avec sections |
-| `acueil.component.scss` | Styles spécifiques au composant |
+| `accueil.component.ts` | Migration vers templateUrl |
+| `accueil.component.html` | Template HTML complet avec sections |
+| `accueil.component.scss` | Styles spécifiques au composant |
 | `competences.component.ts` | Migration vers templateUrl |
 | `competences.component.html` | Grid de compétences |
 | `competences.component.scss` | Styles hover et responsive |

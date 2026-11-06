@@ -61,7 +61,7 @@ portfolio-starter/
 ├── src/
 │   ├── app/
 │   │   ├── pages/
-│   │   │   ├── acueil/          # Page d'accueil
+│   │   │   ├── accueil/          # Page d'accueil
 │   │   │   ├── projets/         # Page des projets
 │   │   │   ├── experiences/     # Timeline expériences
 │   │   │   ├── formations/      # Timeline formations

@@ -6,7 +6,7 @@
 
 ## Problèmes Résolus
 
-### 1. Erreur de Tag HTML Manquant (`acueil.component.html`)
+### 1. Erreur de Tag HTML Manquant (`accueil.component.html`)
 **Problème :** Missing closing `</div>` tag au début du fichier.
 **Solution :** Restructuration complète du template avec la bonne hiérarchie des balises.
 
@@ -41,7 +41,7 @@
 ## Fichiers Modifiés
 
 ### Composants Pages
-- `src/app/pages/acueil/acueil.component.ts` - Ajout RouterLink + HeaderComponent
+- `src/app/pages/accueil/accueil.component.ts` - Ajout RouterLink + HeaderComponent
 - `src/app/pages/competences/competences.component.ts` - Nettoyage des imports
 - `src/app/pages/contact/contact.component.html` - Encodage &#64; pour l'email
 - `src/app/pages/contact/contact.component.ts` - Ajout HeaderComponent via barrel
@@ -55,7 +55,7 @@
 - `src/app/shared/index.ts` - Déjà exportait SidebarComponent et HeaderComponent
 
 ### Configuration
-- `src/app/pages/acueil/acueil.component.html` - Restructuration complète avec balises fermantes correctes
+- `src/app/pages/accueil/accueil.component.html` - Restructuration complète avec balises fermantes correctes
 - `src/main.ts` - Déjà avait RouterOutlet importé
 
 ---

@@ -16,8 +16,8 @@ Vous avez demandé d'appliquer les corrections identifiées sur le projet sans c
 | # | Correction | Fichier(s) affectés | Impact |
 |---|------------|---------------------|--------|
 | 1 | Export du FooterComponent | `src/app/shared/index.ts` | ✅ |
-| 2 | Mise à jour AccueilComponent (TS) | `src/app/pages/acueil/acueil.component.ts` | ✅ |
-| 3 | Migration footer inline → composant (Accueil) | `src/app/pages/acueil/acueil.component.html` | ✅ |
+| 2 | Mise à jour AccueilComponent (TS) | `src/app/pages/accueil/accueil.component.ts` | ✅ |
+| 3 | Migration footer inline → composant (Accueil) | `src/app/pages/accueil/accueil.component.html` | ✅ |
 | 4 | Mise à jour ContactComponent (TS) | `src/app/pages/contact/contact.component.ts` | ✅ |
 | 5 | Migration footer inline → composant (Contact) | `src/app/pages/contact/contact.component.html` | ✅ |
 | 6 | Ajout FooterComponent aux imports pages autres | 4 fichiers `.ts` | ℹ️ Préparé |
@@ -43,8 +43,8 @@ export { FooterComponent } from './components/footer/footer.component'; // ✅ A
 ### Étape 2 : Composant Accueil - Migration du footer
 
 **Fichiers modifiés :**
-- `src/app/pages/acueil/acueil.component.ts`
-- `src/app/pages/acueil/acueil.component.html`
+- `src/app/pages/accueil/accueil.component.ts`
+- `src/app/pages/accueil/accueil.component.html`
 
 **Changement TypeScript :**
 ```typescript
@@ -53,8 +53,8 @@ import { FooterComponent, HeaderComponent } from '../../shared/index';
 @Component({
   // ...
   imports: [CommonModule, FooterComponent, HeaderComponent], // ✅
-  templateUrl: './acueil.component.html',
-  styleUrls: ['./acueil.component.scss']
+  templateUrl: './accueil.component.html',
+  styleUrls: ['./accueil.component.scss']
 })
 export class AccueilComponent {}
 ```

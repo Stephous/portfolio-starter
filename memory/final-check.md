@@ -11,7 +11,7 @@ metadata:
 
 1. **Symboles @ dans HTML corrigés**
    - Remplacement des pseudo avec `@` par du texte sans symbole spécial
-   - Dans `acueil.component.html` et `contact.component.html`
+   - Dans `accueil.component.html` et `contact.component.html`
 
 2. **Compilation réussie**
    - Commande `ng build` terminée sans erreur
@@ -25,7 +25,7 @@ portfolio-starter/
 ├── src/
 │   ├── app/
 │   │   ├── pages/
-│   │   │   ├── acueil/          # ✅ Template + SCSS
+│   │   │   ├── accueil/          # ✅ Template + SCSS
 │   │   │   ├── competences/     # ✅ Template + SCSS
 │   │   │   ├── contact/         # ✅ Template + SCSS
 │   │   │   ├── formations/      # ✅ Template + SCSS
