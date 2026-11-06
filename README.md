@@ -118,5 +118,4 @@ Développeur web full stack passionné par les applications métiers et l'analys
 
 ---
 
-*Portfolio généré avec Claude Code 🤖*  
 *Pseudo : @SteelBeamY | GitHub : [@Stephous](https://github.com/Stephous)*

@@ -1,10 +1,10 @@
 # Dossier maître — Portfolio de Stéphane Dacheux
 
-Version 1 — 1er octobre 2026. Document de travail destiné à Stéphane et à Claude Code. Ce dossier rassemble les sources disponibles ; il ne constitue pas le texte définitif du site.
+Version 1 — 1er octobre 2026. Document de travail destiné à Stéphane. Ce dossier rassemble les sources disponibles ; il ne constitue pas le texte définitif du site.
 
 ## 1. Objectif et règles d’utilisation
 
-Construire un portfolio personnel détaillé à partir du parcours réel : développement web, applications métiers, projets étudiants, animation et loisirs. Stéphane souhaite conserver une matière riche avant de décider de sa synthèse et de transmettre les éléments à Claude Code pour la conception du site.
+Construire un portfolio personnel détaillé à partir du parcours réel : développement web, applications métiers, projets étudiants, animation et loisirs. Stéphane souhaite conserver une matière riche avant de décider de sa synthèse pour la conception du site.
 
 Ne pas inventer de résultats chiffrés, d’utilisateurs, de gains de performance, de responsabilités ou de contributions individuelles. Une technologie mentionnée sur un CV n’est pas automatiquement une expertise avancée. Ne pas transformer un projet collectif en réalisation individuelle. Ne pas considérer une analyse statique comme une démonstration fonctionnelle.
 

@@ -132,5 +132,4 @@ npm start
 
 ---
 
-**Généré avec Claude Code** 🤖  
 **Portefeuille de Stéphane Dacheux** | [@SteelBeamY](https://github.com/Stephous)

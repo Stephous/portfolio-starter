@@ -61,6 +61,5 @@ ng serve --proxy-config proxy.conf.json
 
 ---
 
-🤖 Généré avec Claude Code  
 **Version :** Angular 19 Standalone Components  
 **Build :** Production-ready

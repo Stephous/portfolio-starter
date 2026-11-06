@@ -219,5 +219,4 @@ Le projet est prêt pour la création de la sidebar dans une prochaine intervent
 ---
 
 **Date de modifications :** 22 octobre 2026  
-**Développeur :** Claude Code  
 **Framework :** Angular 17+ (standalone components)

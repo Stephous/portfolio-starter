@@ -86,5 +86,3 @@ npm run build
 # Preview du build
 npm run serve
 ```
-
-**Generated with [Claude Code]**
