@@ -1,144 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Configuration Vercel - portfolio-starter</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    .container {
-      background: white;
-      border-radius: 20px;
-      padding: 40px;
-      max-width: 800px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-    }
-    h1 { color: #333; margin-bottom: 10px; font-size: 2rem; }
-    .subtitle { color: #666; margin-bottom: 30px; }
-    .step {
-      background: #f8f9fa;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 15px 0;
-      border-left: 4px solid #667eea;
-    }
-    .step h3 { color: #333; margin-bottom: 10px; }
-    .step p { color: #555; line-height: 1.6; }
-    .code {
-      background: #2d2d2d;
-      color: #f8f8f2;
-      padding: 15px;
-      border-radius: 8px;
-      overflow-x: auto;
-      font-family: 'Courier New', monospace;
-      margin: 10px 0;
-    }
-    .highlight { background: #fff3cd; padding: 2px 6px; border-radius: 4px; font-weight: bold; }
-    .btn {
-      display: inline-block;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 50px;
-      font-weight: bold;
-      margin-top: 20px;
-      transition: transform 0.2s;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .checklist { list-style: none; }
-    .checklist li {
-      padding: 8px 0;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .checklist input[type="checkbox"] { margin: 0; }
-    .checklist label { cursor: pointer; }
-    .success { color: #28a745; font-weight: bold; }
-    .warning { color: #ffc107; font-weight: bold; }
-    footer { text-align: center; margin-top: 30px; color: #888; font-size: 0.9rem; }
-  </style>
+  <meta charset="utf-8">
+  <title>Portfolio de Stéphane Dacheux - Développeur Web Full Stack</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Stéphane Dacheux - Développeur web full stack (Angular + Express) spécialisé dans les applications métier et l'analyse des besoins.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
 </head>
 <body>
-  <div class="container">
-    <h1>🚀 Prêt pour Vercel !</h1>
-    <p class="subtitle">Ton projet Angular est configuré pour un déploiement facile</p>
-
-    <div class="step">
-      <h3>✅ Configuration Complétée</h3>
-      <p>Ces fichiers ont été créés automatiquement :</p>
-      <ul class="checklist">
-        <li><input type="checkbox" checked disabled> <label><code>vercel.json</code></label> - Configuration principale Vercel</label>
-        <li><input type="checkbox" checked disabled> <label><code>.vercel/config.json</code></label> - Config alternative Vercel</label>
-        <li><input type="checkbox" checked disabled> <label><code>.gitignore</code></label> - Exclut dist/ sauf production build</label>
-        <li><input type="checkbox" checked disabled> <label><code>.env.example</code></label> - Template variables d'environnement</label>
-      </ul>
-    </div>
-
-    <div class="step">
-      <h3>📋 Étapes pour Déployer</h3>
-
-      <p><strong>Option 1 : Via l'interface Web (Plus simple)</strong></p>
-      <ol style="margin-left: 20px; color: #555;">
-        <li>Vais sur <a href="https://vercel.com" target="_blank">vercel.com</a></li>
-        <li>Clique sur <code>Add New...</code> → <code>Project</code></li>
-        <li>Importe ton GitHub repo <code>portfolio-starter</code></li>
-        <li>Vercel détecte Angular automatiquement ✨</li>
-        <li>Ajoute un domaine personnalisé (optionnel)</li>
-        <li>Clique sur <strong>"Deploy"</strong></li>
-        <li><strong>Ton site est en ligne en 2-5 minutes ! 🎉</strong></li>
-      </ol>
-
-      <p style="margin-top: 15px;"><strong>Option 2 : Déploiement Automatique via Git</strong></p>
-      <div class="code">npm install -g vercel
-vercel login
-vercel --prod</div>
-      <p>A chaque push sur GitHub, Vercel rebuild automatiquement ! 🔄</p>
-    </div>
-
-    <div class="step">
-      <h3>🌐 Domaine Personnalisé</h3>
-      <p>Ajoute ton propre nom de domaine (ex: <code>portfolio.stephane.fr</code>) :</p>
-      <ol style="margin-left: 20px; color: #555;">
-        <li>Vais dans <strong>Project Settings → Domains</strong></li>
-        <li>Tape ton domaine</li>
-        <li>Ajoute les DNS correspondants chez ton registrar</li>
-      </ol>
-    </div>
-
-    <div class="step">
-      <h3>🔧 Commandes Utiles</h3>
-      <p><strong>Test le build local :</strong></p>
-      <div class="code">npm run build:vercel</div>
-      <p style="margin-top: 10px;"><strong>Voir les logs en production :</strong></p>
-      <div class="code">vercel logs</div>
-    </div>
-
-    <div class="step">
-      <h3>✅ Vérifications Post-Déploiement</h3>
-      <ul class="checklist" style="margin-top: 10px;">
-        <li><input type="checkbox"> <label>Site accessible sur <code>https://ton-repo.vercel.app</code></label></li>
-        <li><input type="checkbox"> <label>Navigation fonctionne (pas de 404)</label></li>
-        <li><input type="checkbox"> <label>Images chargées correctement</label></li>
-        <li><input type="checkbox"> <label>HTTPS fonctionne</label></li>
-      </ul>
-    </div>
-
-    <a href="https://vercel.com/new" target="_blank" class="btn">🚀 Déployer sur Vercel maintenant</a>
-
-    <footer>
-      <p>Bon déploiement ! 🎊 | Documentation : <code>README_VERCEL.md</code></p>
-    </footer>
-  </div>
+  <app-root></app-root>
 </body>
 </html>

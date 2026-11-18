@@ -28,12 +28,7 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "."
-              },
-              {
-                "glob": "**/*",
-                "input": "dist/portfolio/browser",
-                "output": "."
+                "input": "public"
               }
             ],
             "styles": [

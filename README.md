@@ -126,24 +126,28 @@ Développeur web full stack passionné par les applications métiers et l'analys
 
 **✅ Configuration Vercel terminée !** Ton projet est prêt à être déployé gratuitement.
 
-### 📦 Fichiers de configuration créés :
+### ⚙️ Configuration importante
 
-| ✅ | Fichier | Description |
-|-----|---------|-------------|
-| 1️⃣ | `vercel.json` | Config principale (build, output, headers) |
-| 2️⃣ | `.vercel/config.json` | Config alternative Vercel |
-| 3️⃣ | `.gitignore` | Mis à jour - exclut `/dist` sauf production |
-| 4️⃣ | `.env.example` | Template variables d'environnement |
-| 5️⃣ | `README_VERCEL.md` | Guide complet de déploiement |
-| 6️⃣ | `.deployment-checklist.md` | Checklist avant/après déploiement |
-| 7️⃣ | `SUMMAIRE_DEPLOIEMENT.md` | **GUIDE EXPRESS - Lis-moi !** ⭐ |
+- ✅ `index.html` : Template d'entrée pour Angular (non compilé, fourni par Angular CLI)
+- ✅ `vercel.json` : Config build + headers sécurité
+- ✅ `.gitignore` : **Exclut `/dist/** - NE DOIT PAS ÊTRE COMMITÉ**
+- ✅ Build production → `dist/portfolio/` (exclu de Git)
 
-### 🎯 ÉTAPE UNIQUE : Déployer en 3 minutes
+### 📦 Fonctionnement
+
+Quand tu fais `npm run build`, Angular crée :
+- `dist/portfolio/browser/index.html` (ton site compilé)
+- Tous les assets, CSS, JS optimisés
+
+Vercel utilisera automatiquement ce fichier en tant que homepage !
+
+### 🎯 ÉTAPES DE DÉPLOIEMENT (3 minutes !)
 
 1. **Ouvre** [vercel.com/new](https://vercel.com/new)
 2. **Connecte-toi** avec GitHub
-3. **Importe** `portfolio-starter` → Clique **"Deploy"**
-4. **Prêt !** Ton site est en ligne en 2-5 minutes 🎉
+3. **Importe** `portfolio-starter` → Vercel détecte Angular automatiquement ✅
+4. **Clique "Deploy"** 
+5. **Prêt !** Ton site est en ligne en 2-5 minutes 🎉
 
 **Ton URL :** `https://ton-repo.vercel.app`
 
@@ -151,14 +155,17 @@ Développeur web full stack passionné par les applications métiers et l'analys
 
 - ✅ HTTPS automatique
 - ✅ CDN mondial (rapide partout)
-- ✅ Déploiements automatiques après push
+- ✅ Déploiements automatiques après push Git
 - ✅ 100GB/mois de trafic
 - ✅ Domaine personnalisé gratuit
+- ✅ Prévisualisation PR
 
 ### 📚 Documentation Complète
 
-- **Guide Express** : `SUMMAIRE_DEPLOIEMENT.md` ⭐
-- **Guide Détaillé** : `README_VERCEL.md`
-- **Diagramme** : `DEPLOIEMENT_DIAGRAMME.md`
+Pour plus de détails, consulte :
+- **SUMMAIRE_DEPLOIEMENT.md** - Guide express étape par étape ⭐
+- **README_VERCEL.md** - Guide détaillé complet  
+- **.deployment-checklist.md** - Checklist vérifications avant/après
+- **DEPLOIEMENT_DIAGRAMME.md** - Diagrammes ASCII
 
 ---
