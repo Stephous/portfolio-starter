@@ -29,6 +29,11 @@
               {
                 "glob": "**/*",
                 "input": "."
+              },
+              {
+                "glob": "**/*",
+                "input": "dist/portfolio/browser",
+                "output": "."
               }
             ],
             "styles": [

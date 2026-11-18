@@ -10,6 +10,8 @@
     "server": "node dist/portfolio/server.js || true",
     "client": "ng serve --host 0.0.0.0 --proxy-config proxy.conf.json",
     "build": "ng build",
+    "build:prod": "ng build --configuration=production",
+    "build:vercel": "ng build --configuration=production && echo \"Build prêt pour Vercel!\"",
     "watch": "ng build --watch --configuration development"
   },
   "keywords": ["portfolio", "angular", "express", "fullstack"],

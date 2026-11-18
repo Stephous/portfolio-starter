@@ -119,3 +119,46 @@ Développeur web full stack passionné par les applications métiers et l'analys
 ---
 
 *Pseudo : @SteelBeamY | GitHub : [@Stephous](https://github.com/Stephous)*
+
+---
+
+## 🚀 DÉPLOIEMENT VERCEL - PRÊT !
+
+**✅ Configuration Vercel terminée !** Ton projet est prêt à être déployé gratuitement.
+
+### 📦 Fichiers de configuration créés :
+
+| ✅ | Fichier | Description |
+|-----|---------|-------------|
+| 1️⃣ | `vercel.json` | Config principale (build, output, headers) |
+| 2️⃣ | `.vercel/config.json` | Config alternative Vercel |
+| 3️⃣ | `.gitignore` | Mis à jour - exclut `/dist` sauf production |
+| 4️⃣ | `.env.example` | Template variables d'environnement |
+| 5️⃣ | `README_VERCEL.md` | Guide complet de déploiement |
+| 6️⃣ | `.deployment-checklist.md` | Checklist avant/après déploiement |
+| 7️⃣ | `SUMMAIRE_DEPLOIEMENT.md` | **GUIDE EXPRESS - Lis-moi !** ⭐ |
+
+### 🎯 ÉTAPE UNIQUE : Déployer en 3 minutes
+
+1. **Ouvre** [vercel.com/new](https://vercel.com/new)
+2. **Connecte-toi** avec GitHub
+3. **Importe** `portfolio-starter` → Clique **"Deploy"**
+4. **Prêt !** Ton site est en ligne en 2-5 minutes 🎉
+
+**Ton URL :** `https://ton-repo.vercel.app`
+
+### 🌟 Avantages Vercel (Gratuit) :
+
+- ✅ HTTPS automatique
+- ✅ CDN mondial (rapide partout)
+- ✅ Déploiements automatiques après push
+- ✅ 100GB/mois de trafic
+- ✅ Domaine personnalisé gratuit
+
+### 📚 Documentation Complète
+
+- **Guide Express** : `SUMMAIRE_DEPLOIEMENT.md` ⭐
+- **Guide Détaillé** : `README_VERCEL.md`
+- **Diagramme** : `DEPLOIEMENT_DIAGRAMME.md`
+
+---
